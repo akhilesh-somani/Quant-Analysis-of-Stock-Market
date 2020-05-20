@@ -1,0 +1,43 @@
+Grad Project Progress Report 2
+1) Updates (1/2): No explicit mention of updates that have been made since the first progress report.
+
+2) Model Construction (6/6) 
+
+3) Model Performance (5/5)
+
+4) Challenges (1/1)
+
+5) Future Plans (1/1)
+
+Total: (14/15)
+
+General Comments: 
+
+
+For feature engineering,
+
+What is meant when you say you modeled 25 custom features? Aren’t you just selecting 25 features among the 111 original features that you had?
+
+What is the relationship  between step 1 and step 2? If you already selected your features in step 1, then why do you have your model select features for you in step 2? Does it just select among the 25 features you kept from step 1? 
+
+For ML model -clustering,
+
+What is meant by unsystematic risk?
+
+How will you bolster your confidence in the deep learning model by using already known classifications of target industries? What are these classifications?
+
+When performing PCA with k-means, we suggest that you perform PCA dimensionality reduction and then k-means clustering at multiple timesteps or time intervals. Combining all the time series data into single data points will forsake all of the volatility data of the stocks, and will make all of the companies artificially seem very similar. Instead, perform PCA multiple times in order to better produce clusters and observe any patterns among the clusters over time.
+
+For the hierarchical clustering method, what additional features could be used to improve the clustering algorithm?
+
+In the “PCA + time series” section, how do you define “diversity”? If you have stocks from companies that belong to different industries, how do you decide which are the “most diverse”? How does this build upon any of the clustering work you do, and how does it maximize profits?
+
+For the portfolio diversification,
+
+Are you making recommendations based on earlier time-series data so that you can validate their performance using later time-series data? If not, are you trying to make predictions for the current state of the stock market?
+
+Make sure to explain the meaning of the Sharpe, Treynor, and Sharpino ratios in your final report
+
+An annual return of 40% seems very large - does this return just simply measure growth on investment or something else?
+
+For your final project, you will need to perform classifications for portfolio recommendations and evaluate your results. It will not be considered sufficient difficulty for a final project if you just perform clustering on the dataset using different methods. For your classification task, you may wish to consider models that specifically handle time-series data, such as hidden markov models, factor graphs, and recurrent neural networks.
